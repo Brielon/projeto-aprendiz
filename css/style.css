@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+:root{
+    --fh1:'Lobster', cursive;/*fonte footer*/
+    --fh2:'Teko', sans-serif;
+    --bgheader:rgb(168, 168, 168);/*background do header*/
+    --txheadercolor:rgb(2, 2, 2);/*cor do texto do header*/
+    --bgbody:rgb(238, 237, 237);/*cor do background do body*/
+    --bgmain:rgb(223, 222, 222);
+
+}*{
+    padding: 0px;
+    margin: 0px;
+}body{
+    background-color: var(--bgbody);
+}header{
+    background-color:var(--bgheader);
+    border-radius: 0px 0px 10px 10px;
+    border: 2px;
+    border-color: black;
+}h1{
+    font-family: var(--fh1);
+    text-align: center;
+}
+.header{
+    color: var(--txheadercolor);
+    padding: 30px;
+}main{
+    background-color: var(--bgmain);
+    width: 800px;
+    margin: auto;
+    display: block;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+}main a{
+    padding-top: 30px;
+    height: 60px;
+    display: block;
+    font-size: 80px;
+}a{
+    text-decoration: none;
+    color: black;
+
+}.main{
+    text-align: center;
+}footer{
+    background-color: black;
+
+}.footer{
+    color: white;
+    text-align: center;
+    
+    
+
+}.voltar{
+    transform: rotate(180deg);
+    height: 40px;
+}h2, h3{
+    font-family: var(--fh2);
+    margin-left: 30px;
+
+}main p{
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}h3::after{
+    content:":";
+}p::after{
+    content: ".";
+}h2::before{
+    content:"=>";
+}.comentarios{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding-left: 10px;
+    display: inline-block;
+}

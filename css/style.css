@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+/*CORES DO SITE 
+#ced1c0
+#e2aa9d
+#ad5e51
+#7a3726
+#301a1c
+*/
 :root{
+    --cor1: #dac5aa;
+    --cor2: #e6c775;
+    --cor3: #b4944e;
+    --cor4: #6d4c21;
+    --cor5: #301a1c;
     --fh1:'Lobster', cursive;/*fonte footer*/
     --fh2:'Teko', sans-serif;
-    --bgheader:rgb(168, 168, 168);/*background do header*/
-    --txheadercolor:rgb(2, 2, 2);/*cor do texto do header*/
-    --bgbody:rgb(238, 237, 237);/*cor do background do body*/
-    --bgmain:rgb(223, 222, 222);
+    --bgheader:var(--cor3);/*background do header*/
+    --txheadercolor:var(--cor5);/*cor do texto do header*/
+    --bgbody:var(--cor2);/*cor do background do body*/
+    --bgmain:var(--cor1);
 
 }*{
     padding: 0px;
@@ -18,13 +30,15 @@
     border-radius: 0px 0px 10px 10px;
     border: 2px;
     border-color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }h1{
     font-family: var(--fh1);
     text-align: center;
 }
 .header{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
     color: var(--txheadercolor);
-    padding: 30px;
+    padding: 50px;
 }main{
     background-color: var(--bgmain);
     width: 800px;
@@ -32,6 +46,8 @@
     display: block;
     height: auto;
     border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }main a{
     padding-top: 30px;
     height: 60px;
@@ -49,12 +65,6 @@
 }.footer{
     color: white;
     text-align: center;
-    
-    
-
-}.voltar{
-    transform: rotate(180deg);
-    height: 40px;
 }h2, h3{
     font-family: var(--fh2);
     margin-left: 30px;
@@ -77,4 +87,23 @@
     font-weight: 500;
     padding-left: 10px;
     display: inline-block;
+}.perfil{
+    border-radius: 100%;
+    display: inline;
+}.menu{
+    padding: 15px;
+    background-color: var(--cor5);
+    border-radius: 0px 0px 10px 10px;
+
+
+}nav a{
+    color: var(--cor1);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 7px;
+}
+.item:hover{
+    background: var(--cor2);
+    width: 60px;
+    color: var(--cor5);
 }

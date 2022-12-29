@@ -22,7 +22,9 @@
         <h3>git init</h3>
             <p>E um comando unicamente usado para criar um repositorio local no local onde o terminal se encontra(Para se locomover pelas pastas locais usasse "cd" e "dir")</p>
         <h3>git clone</h3>
-            <p>Se o repositorio ja existir pode se baixar um clone com o comando git clone "e a url do repositorio(SSH)"</p>  
+            <p>Se o repositorio ja existir pode se baixar um clone com o comando git clone "e a url do repositorio(SSH)"</p> 
+        <h3>git pull</h3>
+            <p>O comando 'pull' carrega todos os arquivos do repositorio global para o repositorio local</p> 
     <h2>Acessando repositorio global via SSH</h2>
         <h3>git config</h3>    
             <p>O comando git config pode ser usado entre outros para configurar o usuario e o email do editor. ex:<br>"git config user.name"<br>"git config user.email"
@@ -30,8 +32,11 @@
         <h3>git remote</h3>
             <p>Gerencia o conjunto de repositorios rastreados: <br>  *-v:mostra os repositorios remotos ja rastreados <br>   *rm "nome":deleta o rastreamento do repositorio indicado <br>  *add nome "URL/SSH":Adiciona um rastreamento com o nome indicado ao repositorio indicado</p>
     <h2>Manipulando repositorios com o GIT</h2>
-        <h3>git pull</h3>
-            <p>O comando 'pull' carrega todos os arquivos do repositorio global para o repositorio local</p>
+    <!---->
+         <h3>git status</h3>
+            <p>Iformassoes sobre o estado atual do repositorio</p>   
+        <h3>git log</h3>
+            <p>Mostra os comandos feitos</p>        
         <h3>git checkout (branch)</h3> 
             <p>O comando checkout ajuda a se locomover pelas branch's</p>
         <h3>git checkout -b (branch)</h3> 
@@ -54,8 +59,12 @@
                     </pre>
                 </code>
             </p>
+        <h3>git revert 'commit'</h3>
+            <p>desfaz o comit indicado</p>
         <h3>git commit -am</h3>
             <p>Seria o mesmo que dar um "git add ." em seguida um "git commit -m 'commit_teste'"</p>
+        <h3>git branch</h3>
+            <p>mostra todas as branch's existentes <br>pode se usar: <br>git branch "nome_da_Branch": para criar uma nova branch <br> alem disso pode-se usar: <br>git checkout -b "nome_da_Branch": p/ criar a branch e ja se posicionar nela</p>
         <h3>git merge --no-ff origin/1.1.1</h3> 
             <p>Ele mescla a brach atual com a referida, seria para adicionar a funcionalidades ja existentes a verçao nova que esta apenas com as atualizacoes. Ade ter cuidado para nao mesclar a branch atual com uma branch muito antiga pois dessa maeira as funcionalidades das branchs mais atualizadas seriam perdidas</p>
         <h3>git tag v1.1.1-RC1</h3>
@@ -64,6 +73,8 @@
             <p>O comando 'PUSH' faz o upload da tag do repositorio local para o repositorio global</p>
         <h3>git push --tags</h3> 
             <p>O comando 'PUSH --tags' faz o upload da tag do repositorio local para o repositorio global</p>
+        <h3>git push "nome_do_remote" "nome_da_tag"</h3>
+            <p>para upar uma tag especifica</p>
     </main>
     <footer>
         <p class="footer">Pagina criada por <a href="https://github.com/Brielon/" target="_blank" class="footer"><strong>Angelo</strong></a></p>

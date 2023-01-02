@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tipos de funcoes</h1>
+    <script>
+        //declaraçao de funcao
+        function ola(){
+            document.write("Ola mundo<br>")
+        }
+        ola()
+        //expressao de funçao
+        const ola2 = function(){
+            document.write("Ola mundo const<br>")
+        }
+        ola2()
+        //arrow functions
+        const ola3 = () => {
+            document.write("Ola mundo arrow<br>")
+        }
+        ola3()
+        function diaDAsemana(){
+            
+
+            return new Date().getDay()
+        }
+        console.log(diaDAsemana)
+        function somar(n1,n2){
+            return n1+n2
+        }
+        let soma=somar(3,4)
+        document.write(soma)
+    </script>
+    
+</body>
+</html>

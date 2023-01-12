@@ -73,7 +73,7 @@
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }h3::after{
-    content:":";
+    content:"  :";
 }p::after{
     content: ".";
 }h2::before{

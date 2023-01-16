@@ -8,3 +8,4 @@ function sum() {
 function avarege() {
     return sum(...arguments) / arguments.length
 }
+console.log(avarege(4,4,4,4,4,4,4));

@@ -129,6 +129,7 @@
               <td>2</td>
               <td></td>
             </tr>
+            <tr>
           </tbody>
       </table>
       </div>
@@ -140,6 +141,24 @@
     <script src="js/calc.js"></script>
     <script>
       let tabela = document.querySelectorAll("tbody tr")
+      let alunos = tabela.length
+      let media
+ 
+
+      for(let i=0;i<=alunos;i++){
+       let soma = 0
+        for(let aluno=1;aluno<=4;aluno++){
+          soma += parseFloat(tabela[i].querySelectorAll("td")[aluno].textContent)
+        }
+        media = (soma/4).toFixed(2)
+        tabela[i].querySelectorAll("td")[5].innerText = media
+        if(media<6){
+          tabela[i].querySelectorAll("td")[5].style.color = "red"
+        }else{
+          tabela[i].querySelectorAll("td")[5].style.color = "green"
+        }
+        
+      }
       
     </script>
     </body>

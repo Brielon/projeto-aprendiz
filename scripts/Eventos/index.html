@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h11">Eventos</h1>
+    <button id="btn1">bottao 1</button>
+    <button id="btn2">bottao 2</button>
+    <button id="btn3">bottao 3</button>
+    <h1>Delegaçao de eventos</h1>
+    <div class="container2">
+        <button>Botao1</button>
+        <button>Botao2</button>
+        <button>Botao3</button>
+    </div>
+    <script>
+        let i
+        const body = document.body
+        const h1 = document.getElementById("h11")
+        const btn1 = document.getElementById("btn1")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3")
+        function clicou(){
+            console.log("O botao 2 foi clicado")
+        }
+        btn1.onclick = function(){
+            console.log("O botao 1 foi clicado")
+        }
+        btn2.addEventListener("click",clicou)
+        btn3.addEventListener("click",function(eventos) {
+    eventos.stopPropagation()
+            console.log("O botao 3 foi clicado");
+        },false)
+        const container2 = document.querySelectorAll(".container2")
+        const btns = document.querySelectorAll(".container2 button")
+        // btns[0].addEventListener("click",function(e) {
+        //     e.stopPropagation()
+        //     console.log("Botao 1 clicado");
+        // })
+        // btns[1].addEventListener("click",function(e) {
+        //     e.stopPropagation()
+        //     console.log("Botao 2 clicado");
+        // })
+        // btns[2].addEventListener("click",function(e) {
+        //     e.stopPropagation()
+        //     console.log("Botao 3 clicado");
+        // })
+        container2.addEventListener("click",function(e) {
+            e.stopPropagation()
+            console.log(e.target);
+        })
+        
+
+    </script>
+</body>
+</html>

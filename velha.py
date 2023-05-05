@@ -1,10 +1,18 @@
 import random
 
+def status()
+# return "continue" or "deu velha" or "voce perdeu" or "voce ganhou"
+
 def TurnoAdversario(folha):
     bolinha = str(int(random.random()*9))
     if (bolinha in folha):
         folha = folha.replace(bolinha,"X")
-        JogadorTurn(folha)
+        if Status(folha)=="Continue":
+            JogadorTurn(folha)
+        else:
+            print(Status(folha))
+            exit()
+        
     else:
         TurnoAdversario(folha)
 
@@ -13,17 +21,20 @@ def JogadorTurn(folha):
     bolinha = input()
     if (bolinha in folha):
         folha = folha.replace(bolinha,"O")
+        if Status(folha)=="Continue":
+            TurnoAdversario(folha)
+        else:
+            return Status(folha)
     else:
         print("Opção invalida")
         JogadorTurn(folha)
-    TurnoAdversario(folha)
 
 def iniciar():
-    JogadorTurn("""
- 1 | 2 | 3
----+---+----
- 4 | X | 6
----+---+----
- 7 | 8 | 9
-""")
+    print(JogadorTurn("""
+     1 | 2 | 3
+    ---+---+---
+     4 | X | 6
+    ---+---+---
+     7 | 8 | 9
+    """))
 iniciar()

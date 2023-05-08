@@ -1,1 +1,4 @@
-#Jogo da velha para fim de aprendizado
+# Repositorio do curso de:
+## HTML
+## CSS
+## JS
